@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prashant Yadav | Portfolio</title>
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <!----Font awesome cdn  font icon css -->
+    
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
@@ -32,12 +35,14 @@
                     </ul>
                 </nav>
             </header>
+            
             <div class="container">
                  <div class="hero-pic">
                     <img src="images/main_photo.jpg" alt="profile pic">
                  </div>
+                 
                  <div class="hero-text">
-                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h5>Hi, I'm <span class="input">Frontend Developer</span></h5>
                     <h1>Prashant Yadav</h1>
                     <p> As a Bachelor’s student in Computer Engineering at NCIT, I have developed a strong foundation in hardware and software principles, with hands-on experience in Unix/Linux systems, programming, and network management. I am passionate about problem-solving and keen on applying my technical knowledge in real-world settings. Currently, I am looking for an internship (or job) opportunity where I can contribute to impactful projects, collaborate with a dynamic team, and further develop my skills in software development, systems engineering, or IT infrastructure.
                     </p>
@@ -52,31 +57,31 @@
                         <a href="https://www.linkedin.com/in/pyprashant/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://www.instagram.com/pyprashant/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/ErPrashantYadav"><i class="fa-brands fa-github"></i></a>
-                        <!-- <a href="#"><i class="fa-brands fa-pintrest"></i></a> -->
                     </div>
                  </div>
             </div>
         </div>
      </div>
-     <!---typed js for typing text effect-->
+     
+     <!-- Typed.js for Typing Text Effect -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
      <script>
-        /** creating button click show hide navbar **/
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
+        // Navbar toggle button functionality
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
 
         togglebtn.addEventListener("click", function(){
             this.classList.toggle("click");
             nav.classList.toggle("open");
-        })
+        });
 
-        var typed=new Typed(".input",{
-            strings:["Frontend Developer","UX Designer","Web Developer"],
-            typedSpeed:70,
-            backSpeed:55,
-            loop:true
-        })
+        // Typed.js instance for animated text
+        var typed = new Typed(".input", {
+            strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
      </script>
 </body>
 </html>
