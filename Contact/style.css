@@ -94,3 +94,32 @@ form button {
 form button:hover {
     box-shadow: none;
 }
+
+/* Responsive styling for mobile screens */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 32px;
+    }
+    
+    .contact form {
+        width: 90%;
+    }
+    
+    form .input-box {
+        flex-direction: column;
+    }
+    
+    .input-box .input-field {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .field .item {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+}
